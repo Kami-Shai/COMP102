@@ -6,7 +6,7 @@
 #     print('Your number is negative.')
 # else:
 #     print('Your number is zero.')
-
+#
 # Question_6
 # num_1=input('Please enter your first number = ')
 # num_2=input('Please enter your second number = ')
@@ -17,7 +17,7 @@
 #     print('The 3 numbers are all different.')
 # else:
 #     print('The three numbers are all neither same nor different')
-
+#
 # Question_7
 # temperature=int(input('Please enter the tempoerature = '))
 # metric=input('Please enter the metric of temparture: ')

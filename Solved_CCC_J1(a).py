@@ -5,7 +5,7 @@
 # cupcakes=(8*r)+(s*3)
 # leftover=cupcakes-students
 # print(leftover,'cupcakes were leftover')
-
+#
 # CCC 2020 J1
 # s=int(input('Please enter the number of small treats = '))
 # m=int(input('Please enter the number of medium treats = '))
@@ -16,7 +16,7 @@
 #     print('Happy!')
 # else:
 #     print('Sad:(')
-
+#
 # CCC 2019 J1
 # apples_three_point=int(input('Please enter the number of 3-points by Apples = '))
 # apples_two_point=int(input('Please enter the number of 2-points by Apples = '))
@@ -32,7 +32,7 @@
 #     print('B')
 # else:
 #     print('T')
-
+#
 # CCC 2018 J1
 # num_1=int(input('Pleae enter the first digit = '))
 # num_2=int(input('Pleae enter the second digit = '))
@@ -42,7 +42,7 @@
 #     print('Ignore!')
 # else:
 #     print('Answer!')
-
+#
 # CCC 2017 J1
 # x=int(input('Please enter the x-coordinate = '))
 # y=int(input('Please enter the y-coordinate = '))
