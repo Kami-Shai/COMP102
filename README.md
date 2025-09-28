@@ -1,5 +1,5 @@
 # COMP102
-Welcome to all the coursework and proects for my University's Programming Fundamental course.
+Welcome to all the coursework and projects for my University's first semester Programming Fundamentals course.
 
 Course Outline:
 <br>
