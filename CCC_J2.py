@@ -127,8 +127,81 @@
 #     word=input()
 # 
 # CCC 2009 J2
-trout_p=int(input())
-pike_p=int(input())
-pickerel_p=int(input())
-total_allowed=int(input())
-c=0
+# trout_p=int(input())
+# pike_p=int(input())
+# pickerel_p=int(input())
+# total_allowed=int(input())
+# c=0
+# output=""
+# for trout in range(total_allowed//trout_p+1):
+#     for pike in range(total_allowed//pike_p+1):
+#         for pickerel in range(total_allowed//pickerel_p+1):
+#             total=trout*trout_p+pike*pike_p+pickerel*pickerel_p
+#             if total<=total_allowed and (trout+pike+pickerel)>0:
+#                 print(f"{trout} Brown Trout, {pike} Northern Pike, {pickerel} Yellow Pickerel")
+#                 c+=1
+# print(f"Number of ways to catch fish: {c}")
+# 
+# CCC 2000 J2
+# m=int(input())
+# n=int(input())
+# c=0
+# for i in range(m,n+1):
+#     flag=True
+#     rotated=""
+#     for j in str(i):
+#         if j=="1":
+#             rotated+="1"
+#         elif j=="6":
+#             rotated+="9"
+#         elif j=="8":
+#             rotated+="8"
+#         elif j=="9":
+#             rotated+="6"
+#         else:
+#             flag=False
+#             break
+#     if flag and rotated[::-1]==str(i):
+#         c+=1
+# print(c)
+# 
+# CCC 2006 J2
+# m=int(input())
+# n=int(input())
+# c=0
+# for i in range(1,m+1):
+#     for j in range(1,n+1):
+#         if i+j==10:
+#             c+=1
+# if c==1:
+#     print(f"There is {c} way to get the sum 10.")
+# else:
+#     print(f"There are {c} ways to get the sum 10.")
+# 
+# CCC 2005 J2
+# start=int(input())
+# end=int(input())
+# rsa=0
+# for i in range(start,end+1):
+#     c=0
+#     for j in range(1,i+1):
+#         if i%j==0:
+#             c+=1
+#     if c==4:
+#         rsa+=1
+# print(f"The number of RSA numbers between {start} and {end} is {rsa}")
+# 
+# CCC 2008 J2
+# b=int(input())
+# playlist="ABCDE"
+# while b!=4:
+#     n=int(input())
+#     for i in range(n):
+#         if b==1:
+#             playlist=playlist[1:]+playlist[0]
+#         elif b==2:
+#             playlist=playlist[-1]+playlist[:4]
+#         elif b==3:
+#             playlist=playlist[1]+playlist[0]+playlist[2:]
+#     b=int(input())
+# print(*playlist)
