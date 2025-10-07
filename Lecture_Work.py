@@ -1,3 +1,5 @@
+# FUNCTIONS
+# Lecture 9
 # def div_by(n,d):
 #     """
 #     docstr
