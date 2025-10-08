@@ -1,4 +1,4 @@
-# GUESS & CHECK
+# BISECTION SEARCH
 # Lecture 7
 # cube = int(input())
 # epsilon = 0.01
@@ -26,9 +26,9 @@
 # 
 # def sum_all_odd(a,b):
 #     for i in range(a,b+1):
-#         if i%2 == 1:
+#         if i%2 != 0:
 #             sum+=i
-#     return i
+#     return sum
 # 
 # def palindrome(s):
 # if s[::-1]==s:
@@ -42,3 +42,11 @@
 #         f*=i
 #     return f
 # print(factorial(5))
+# 
+# Lecture 10
+# def apply(criteria,n):
+#     c=0
+#     for i in range(n+1):
+#         if criteria(i):
+#             c+=1
+#     return c
