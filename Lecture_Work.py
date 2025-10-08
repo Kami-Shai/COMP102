@@ -1,3 +1,18 @@
+# GUESS & CHECK
+# Lecture 7
+# cube = int(input())
+# epsilon = 0.01
+# low = 0
+# high = cube
+# guess=(high+low)/2
+# while high-low>epsilon:
+#     if guess**3<cube:
+#         low=guess
+#     elif guess**3>cube:
+#         high=guess
+#     guess=(high+low)/2
+# print(f"The cube root of {cube} is approximately {guess}.")
+
 # FUNCTIONS
 # Lecture 9
 # def div_by(n,d):
