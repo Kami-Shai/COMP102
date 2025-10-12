@@ -50,3 +50,19 @@
 #         if criteria(i):
 #             c+=1
 #     return c
+# 
+# def char_counts(s):
+#     v=0
+#     for char in s:
+#         if char in "aeiou":
+#             v+=1
+#     return (v,len(s)-v)
+# print(char_counts("hello"))
+# 
+# def sum_and_prod(L):
+#     sum,prod=0,1
+#     for i in L:
+#         sum+=i
+#         prod*=i
+#     return (sum,prod)
+# print(sum_and_prod((1,2,3,4,5)))
