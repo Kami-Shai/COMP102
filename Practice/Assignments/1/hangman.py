@@ -122,6 +122,7 @@ def hangman(secret_word, with_help):
     print(f"I am thinking of a word that is {len(secret_word)} letters long.")
     guesses=10
     guess_list=[]
+
     while not has_player_won(secret_word,guess_list) and guesses>0:
         print("--------------")
         print(f"You have {guesses} guesses left.")
@@ -131,39 +132,34 @@ def hangman(secret_word, with_help):
         if with_help and guess=="!":
             if guesses<3:
                 print(f"Oops! Not enough guesses left: {get_word_progress(secret_word, guess_list)}")
-                continue
-            letter=letter_reveal(secret_word,get_available_letters(guess_list))
-            if letter==None:
-                print(f"No letters left to reveal: {get_word_progress(secret_word, guess_list)}")
-                continue
-            guess_list.append(letter)
-            guesses-=3
-            print(f"Letter revealed: {letter}")
-            print(get_word_progress(secret_word,guess_list))
-            if has_player_won(secret_word, guess_list):
-                break
-            continue
+            else:
+                letter=letter_reveal(secret_word,get_available_letters(guess_list))
+                if letter==None:
+                    print(f"No letters left to reveal: {get_word_progress(secret_word, guess_list)}")
+                else:
+                    guess_list.append(letter)
+                    guesses-=3
+                    print(f"Letter revealed: {letter}")
+                    print(get_word_progress(secret_word,guess_list))
         
-        if guess in guess_list:
+        elif guess in guess_list:
             print(f"Oops! You have already guessed that letter: {get_word_progress(secret_word,guess_list)}")
-            continue
 
-        if len(guess)!=1 or not guess.isalpha():
+        elif len(guess)!=1 or not guess.isalpha():
             if with_help:
                 print(f"Oops! That is not a valid input. Please enter a letter or ! for help: {get_word_progress(secret_word, guess_list)}")
             else:
                 print(f"Oops! That is not a valid letter. Please input a letter from the alphabet: {get_word_progress(secret_word, guess_list)}")
-            continue
-
-        guess_list.append(guess)
-        if guess in secret_word:
-            print(f"Good guess: {get_word_progress(secret_word,guess_list)}")
         else:
-            if guess in "aeiou":
-                guesses-=2
+            guess_list.append(guess)
+            if guess in secret_word:
+                print(f"Good guess: {get_word_progress(secret_word,guess_list)}")
             else:
-                guesses-=1
-            print(f"Oops! That letter is not in my word: {get_word_progress(secret_word, guess_list)}")
+                if guess in "aeiou":
+                    guesses-=2
+                else:
+                    guesses-=1
+                print(f"Oops! That letter is not in my word: {get_word_progress(secret_word, guess_list)}")
     
     print("--------------")
     if has_player_won(secret_word,guess_list):
