@@ -66,3 +66,11 @@
 #         prod*=i
 #     return (sum,prod)
 # print(sum_and_prod((1,2,3,4,5)))
+# 
+# Excception Handling
+# def pairwise_div(Lnum,Ldenom):
+#     assert len(Lnum)!=len(Ldenom),"The lists are not the same size."
+#     assert Lnum!=[] and Ldenom!=[],"The list is empty."
+#     if 0 in Ldenom:
+#         raise ValueError("The denominator contains 0.")
+#     return [Lnum[i]/Ldenom[i] for i in range(len(Lnum))]
