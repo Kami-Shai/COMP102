@@ -67,10 +67,77 @@
 #     return (sum,prod)
 # print(sum_and_prod((1,2,3,4,5)))
 # 
-# Excception Handling
+# Exception Handling
 # def pairwise_div(Lnum,Ldenom):
 #     assert len(Lnum)!=len(Ldenom),"The lists are not the same size."
 #     assert Lnum!=[] and Ldenom!=[],"The list is empty."
 #     if 0 in Ldenom:
 #         raise ValueError("The denominator contains 0.")
 #     return [Lnum[i]/Ldenom[i] for i in range(len(Lnum))]
+# 
+# DICTIONARIES
+# def find_grades(grades,students):
+#     student_grades=[]
+#     for i in students:
+#         student_grades.append(grades[i])
+#     return student_grades
+# 
+# def find_in_L(Ld,k):
+#     for dictionary in Ld:
+#         if k in dictionary:
+#             return True
+#     return False
+# 
+# def count_matches(d):
+#     for key,value in d.items():
+#         if key==value:
+#             c+=1
+#     return c
+# def get_average(data,what):
+#     all_data=[]
+#     for stud in data.keys():
+#         #
+#     return
+
+# def add_rationals(x,y):
+# 	return rational(numer(x)*denom(y)+numer(y)*denom(x),denom(x)*denom(y))
+
+# def make_rational(numer,denom):
+#     def get_numer():
+#         return numer
+#     def get_denom():
+#         return denom
+#     def add_rational(x,y):
+#  	    return rational(numer(x)*denom(y)+numer(y)*denom(x),denom(x)*denom(y))
+#     def mul_rational():
+         
+# class Rectangle:
+#     def __init__(self,length,width):
+#         self.length=length
+#         self.width=width
+    
+#     def get_length(self):
+#         return self.length
+#     def get_width(self):
+#         return self.width    
+#     def area(self):
+#         return self.get_length()*self.get_width()
+#     def perimeter(self):
+#         return 2*(self.length+self.width)
+    
+# r1=Rectangle(5,10)
+# print(r1.area())
+
+from math import sqrt
+class Point:
+    def __init__(self,x,y):
+        self.x=x
+        self.y=y
+    
+    def get_x(self):
+        return self.x
+    def get_y(self):
+        return self.y
+    def distance(self,other):
+        d=sqrt((self.get_x()+other.get_x())**2-(self.get_y()+other.get_y())**2)
+        return d
