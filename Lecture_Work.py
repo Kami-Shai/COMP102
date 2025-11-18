@@ -115,7 +115,7 @@
 #     def __init__(self,length,width):
 #         self.length=length
 #         self.width=width
-    
+# 
 #     def get_length(self):
 #         return self.length
 #     def get_width(self):
@@ -124,20 +124,20 @@
 #         return self.get_length()*self.get_width()
 #     def perimeter(self):
 #         return 2*(self.length+self.width)
-    
+# 
 # r1=Rectangle(5,10)
 # print(r1.area())
 
-from math import sqrt
-class Point:
-    def __init__(self,x,y):
-        self.x=x
-        self.y=y
-    
-    def get_x(self):
-        return self.x
-    def get_y(self):
-        return self.y
-    def distance(self,other):
-        d=sqrt((self.get_x()+other.get_x())**2-(self.get_y()+other.get_y())**2)
-        return d
+# from math import sqrt
+# class Point:
+#     def __init__(self,x,y):
+#         self.x=x
+#         self.y=y
+# 
+#     def get_x(self):
+#         return self.x
+#     def get_y(self):
+#         return self.y
+#     def distance(self,other):
+#         d=sqrt((self.get_x()+other.get_x())**2-(self.get_y()+other.get_y())**2)
+#         return d
