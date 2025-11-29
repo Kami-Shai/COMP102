@@ -9,7 +9,7 @@
 # else:
 #     middle=weight_3
 # print(middle)
-# 
+
 # CCC 2006 J1
 # burger=int(input())
 # side=int(input())
@@ -44,9 +44,8 @@
 #     calories+=266
 # elif dessert==3:
 #     calories+=75
-# 
 # print('Your total calorie count is = ',calories)
-# 
+
 # CCC 2018 J2
 # parking_spaces=int(input())
 # spaces_taken_yesterday=input()
@@ -56,7 +55,7 @@
 #     if spaces_taken_yesterday[i]=='C' and spaces_taken_today[i]=='C':
 #         count +=1
 # print(count)
-# 
+
 # CCC 2021 J2
 # bids=int(input())
 # max_bid=0
@@ -67,7 +66,7 @@
 #         max_bid+=bid_amount
 #         richest=name
 # print(richest)
-# 
+
 # CCC 2015 J2
 # message=input()
 # happy=0
@@ -86,7 +85,7 @@
 #     print('unsure')
 # else:
 #     print('none')
-# 
+
 # CCC 2007 J2
 # message=input()
 # while message!='TTYL':
@@ -116,7 +115,7 @@
 #         print(message)
 #     message=input()
 # print('talk to you later')
-# 
+
 # CCC 2002 J2
 # word=input()
 # while word != 'quit!':
@@ -125,7 +124,7 @@
 #     else:
 #         print(word)
 #     word=input()
-# 
+
 # CCC 2009 J2
 # trout_p=int(input())
 # pike_p=int(input())
@@ -141,7 +140,7 @@
 #                 print(f"{trout} Brown Trout, {pike} Northern Pike, {pickerel} Yellow Pickerel")
 #                 c+=1
 # print(f"Number of ways to catch fish: {c}")
-# 
+
 # CCC 2000 J2
 # m=int(input())
 # n=int(input())
@@ -164,7 +163,7 @@
 #     if flag and rotated[::-1]==str(i):
 #         c+=1
 # print(c)
-# 
+
 # CCC 2006 J2
 # m=int(input())
 # n=int(input())
@@ -177,7 +176,7 @@
 #     print(f"There is {c} way to get the sum 10.")
 # else:
 #     print(f"There are {c} ways to get the sum 10.")
-# 
+
 # CCC 2005 J2
 # start=int(input())
 # end=int(input())
@@ -190,7 +189,7 @@
 #     if c==4:
 #         rsa+=1
 # print(f"The number of RSA numbers between {start} and {end} is {rsa}")
-# 
+
 # CCC 2008 J2
 # b=int(input())
 # playlist="ABCDE"
@@ -205,24 +204,7 @@
 #             playlist=playlist[1]+playlist[0]+playlist[2:]
 #     b=int(input())
 # print(*playlist)
-# 
-# CCC 2005 J1
-# daytime=int(input())
-# evening=int(input())
-# weekend=int(input())
-# plan_a=(evening*0.15)+(weekend*0.2)+max((0,daytime-100))*0.25
-# plan_b=(evening*0.35)+(weekend*0.25)+max((0,daytime-250))*0.45
-# plan_a=round(plan_a,2)
-# plan_b=round(plan_b,2)
-# print(f"Plan A costs {plan_a}")
-# print(f"Plan B costs {plan_b}")
-# if plan_a<plan_b:
-#     print(f"Plan A is cheapest.")
-# elif plan_b<plan_a:
-#     print(f"Plan B is cheapest.")
-# else:
-#     print(f"Plan A and B are the same price.")
-# 
+
 # CCC 2003 J2
 # c=int(input())
 # result=""
