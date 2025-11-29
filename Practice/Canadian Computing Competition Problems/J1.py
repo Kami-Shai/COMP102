@@ -1,3 +1,51 @@
+# CCC 2007 J1
+# weight_1=int(input('Please enter the first weight = '))
+# weight_2=int(input('Please enter the second weight = '))
+# weight_3=int(input('Please enter the third weight = '))
+# if weight_1>=weight_2>=weight_3 or weight_3<=weight_2<=weight_1:
+#     middle=weight_2
+# elif weight_2>=weight_1>=weight_3 or weight_3<=weight_1<=weight_2:
+#     middle=weight_1
+# else:
+#     middle=weight_3
+# print(middle)
+
+# CCC 2006 J1
+# burger=int(input())
+# side=int(input())
+# drink=int(input())
+# dessert=int(input())
+# calories=0
+# 
+# if burger==1:
+#     calories+=461
+# elif burger==2:
+#     calories+=431
+# elif burger==3:
+#     calories+=420
+# 
+# if side==1:
+#     calories+=100
+# elif side==2:
+#     calories+=57
+# elif side==3:
+#     calories+=70
+# 
+# if drink==1:
+#     calories+=130
+# elif drink==2:
+#     calories+=160
+# elif drink==3:
+#     calories+=118
+# 
+# if dessert==1:
+#     calories+=167
+# elif dessert==2:
+#     calories+=266
+# elif dessert==3:
+#     calories+=75
+# print('Your total calorie count is = ',calories)
+
 # CCC 2022 J1
 # r=int(input('Please enter number of regular boxes = '))
 # s=int(input('Please enter number of small boxes = '))
