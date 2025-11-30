@@ -131,19 +131,145 @@
 # else:
 #     print('After')
 
-# CCC 2016 J1
-# result_1=input('Please enter a Win or Loss: ')
-# result_2=input('Please enter a Win or Loss: ')
-# result_3=input('Please enter a Win or Loss: ')
-# result_4=input('Please enter a Win or Loss: ')
-# result_5=input('Please enter a Win or Loss: ')
-# result_6=input('Please enter a Win or Loss: ')
-# wins=(result_1=='W')+(result_2=='W')+(result_3=='W')+(result_4=='W')+(result_5=='W')+(result_6=='W')
-# if wins>=5:
+# # CCC '13 J1 - Next in line
+# Y=int(input())
+# M=int(input())
+# diff=M-Y
+# O=diff+M
+# print(O)
+
+# # CCC '16 J1 - Tournament Selection
+# results=[]
+# for i in range(6):
+#     letter=input()
+#     results.append(letter)
+# w_count=results.count('W')
+# l_count=results.count('L')
+# if w_count>=5:
 #     print('1')
-# elif wins>=3:
+# elif w_count>=3:
 #     print('2')
-# elif wins>=1:
+# elif w_count>=1:
 #     print('3')
 # else:
 #     print('-1')
+
+# # CCC '02 J1 - 0123456789 (Hard)
+# N=int(input())
+# for _ in range(N):
+#     num=input()
+#     for char in num:
+#         if char=='0' and len(num)>1:
+#             continue
+#         number=int(char)
+# 
+#         if number==0:
+#             print(" * * *")
+#             print("*     *")
+#             print("*     *")
+#             print("*     *")
+#             print("")
+#             print("*     *")
+#             print("*     *")
+#             print("*     *")
+#             print(" * * *")
+# 
+#         if number==1:
+#             print("")
+#             print("*")
+#             print("*")
+#             print("*")
+#             print("")
+#             print("*")
+#             print("*")
+#             print("*")
+#             print("")
+# 
+#         if number==2:
+#             print(" * * *")
+#             print("      *")
+#             print("      *")
+#             print("      *")
+#             print(" * * *")
+#             print("*")
+#             print("*")
+#             print("*")
+#             print(" * * *")
+# 
+#         if number==3:
+#             print(" * * *")
+#             print("      *")
+#             print("      *")
+#             print("      *")
+#             print(" * * *")
+#             print("      *")
+#             print("      *")
+#             print("      *")
+#             print(" * * *")
+# 
+#         if number==4:
+#             print("")
+#             print("*     *")
+#             print("*     *")
+#             print("*     *")
+#             print(" * * *")
+#             print("      *")
+#             print("      *")
+#             print("      *")
+#             print("")
+# 
+#         if number==5:
+#             print(" * * *")
+#             print("*")
+#             print("*")
+#             print("*")
+#             print(" * * *")
+#             print("      *")
+#             print("      *")
+#             print("      *")
+#             print(" * * *")
+# 
+#         if number==6:
+#             print(" * * *")
+#             print("*")
+#             print("*")
+#             print("*")
+#             print(" * * *")
+#             print("*     *")
+#             print("*     *")
+#             print("*     *")
+#             print(" * * *")
+# 
+#         if number==7:
+#             print(" * * *")
+#             print("      *")
+#             print("      *")
+#             print("      *")
+#             print("")
+#             print("      *")
+#             print("      *")
+#             print("      *")
+#             print("")
+# 
+#         if number==8:
+#             print(" * * *")
+#             print("*     *")
+#             print("*     *")
+#             print("*     *")
+#             print(" * * *")
+#             print("*     *")
+#             print("*     *")
+#             print("*     *")
+#             print(" * * *")
+# 
+#         if number==9:
+#             print(" * * *")
+#             print("*     *")
+#             print("*     *")
+#             print("*     *")
+#             print(" * * *")
+#             print("      *")
+#             print("      *")
+#             print("      *")
+#             print(" * * *")
+#     print()

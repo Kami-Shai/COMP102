@@ -174,3 +174,12 @@
 #     result+=f"Minimum perimeter is {minimum} with dimensions {best_row} x {best_col}\n"
 #     c=int(input())
 # print(result,end="")
+
+# # CCC '17 J2 - Shifty Sum
+# N=int(input())
+# k=int(input())
+# sum=0
+# for i in range(k+1):
+#     sum+=N
+#     N*=10
+# print(sum)
