@@ -269,7 +269,7 @@ def main_thread(master):
         triggerlist = [t1, t4]
 
         # TODO: After implementing read_trigger_config, uncomment this line 
-        triggerlist = read_trigger_config('my_triggers.txt')
+        triggerlist = read_trigger_config('triggers.txt')
         
         # HELPER CODE - you don't need to understand this!
         # Draws the popup window that displays the filtered stories
