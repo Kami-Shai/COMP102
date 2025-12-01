@@ -1,0 +1,45 @@
+// trigger file - if you've done problem 9 but no stories are popping up, you
+// should edit this file to contain triggers that will fire on current news
+// stories!
+
+// Technology and business triggers
+t1,TITLE,Google
+t2,TITLE,Apple
+t3,TITLE,Microsoft
+t4,TITLE,Amazon
+t5,TITLE,AI
+
+// Description triggers - very broad to catch more stories
+t6,DESCRIPTION,technology
+t7,DESCRIPTION,company
+t8,DESCRIPTION,market
+t9,DESCRIPTION,business
+t10,DESCRIPTION,new
+
+// Sports triggers
+t11,TITLE,game
+t12,TITLE,team
+t13,DESCRIPTION,sports
+
+// Science and health
+t14,DESCRIPTION,health
+t15,DESCRIPTION,study
+t16,DESCRIPTION,research
+
+// Weather and environment
+t17,DESCRIPTION,weather
+t18,DESCRIPTION,climate
+
+// Very common single words in descriptions
+t19,DESCRIPTION,people
+t20,DESCRIPTION,year
+t21,DESCRIPTION,says
+
+// OR triggers to catch even more
+t22,OR,t1,t2
+t23,OR,t3,t4
+t24,OR,t6,t7
+t25,OR,t19,t20
+
+// Add the broadest triggers to the list
+ADD,t5,t10,t21,t24,t25
