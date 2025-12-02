@@ -141,3 +141,20 @@
 #     def distance(self,other):
 #         d=sqrt((self.get_x()+other.get_x())**2-(self.get_y()+other.get_y())**2)
 #         return d
+def make_animals(L1,L2):
+    L_new={}
+    for i in range(len(L1)):
+        for key,value in L_new.items():
+            key=L1[i]
+            value=L2[i]
+    return L_new
+
+L1=[1,2,3]
+L2=['fish','ant','fox']
+animals=make_animals(L1,L2)
+for i in animals:
+    print(i)
+
+def make_pets(d):
+    for key,value in d.items():
+        print(f'{key} : {value}')
