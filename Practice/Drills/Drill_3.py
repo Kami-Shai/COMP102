@@ -15,8 +15,9 @@
 # print('The circumference of this circle is:',str(round(circumference))+'m')
 # print('The volume of this circle is:',str(round(volume))+'m³')
 # print('The surface area of this circle is:',str(round(surface_area))+'m²')
-#
+
 # Question_3
+# 
 # Method_1
 # num=input('Please enter a number between 1000 & 99999= ')
 # final_num=''
@@ -24,6 +25,7 @@
 #     if i != ',':
 #         final_num+=i
 # print('Here is the number without its comma:',final_num)
+# 
 # Method_2
 # num=input('Please enter a number between 1000 & 99999= ')
 # if len(num)==5:
@@ -33,7 +35,7 @@
 # elif len(num)==7:
 #     final_num=num[:3]+num[4:]
 # print('Here is the number without its comma:',final_num)
-#
+
 # Question_4
 # months=(
 #     "January   "
