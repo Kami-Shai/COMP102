@@ -240,3 +240,54 @@
 #     result+=f"Minimum perimeter is {minimum} with dimensions {best_row} x {best_col}\n"
 #     c=int(input())
 # print(result,end="")
+
+# CCC '25 J2 - Donut Shop
+# D=int(input())
+# E=int(input())
+# for i in range(E):
+#     symbol=input()
+#     Q=int(input())
+#     if symbol=='+':
+#         D+=Q
+#     elif symbol=='-':
+#         D-=Q
+# if D<0:
+#     D=0
+# R=D
+# print(R)
+
+# CCC '25 J3 - Product Codes
+# N=int(input())
+# for _ in range(N):
+#     code=input()
+#     new_code=''
+#     total=0
+#     for i in range(len(code)):
+#         if code[i].isupper():
+#             new_code+=code[i]
+#         elif code[i].isdigit():
+#             total+=int(code[i])
+#         if code[i].isdigit() and code[i+1].isdigit():
+#             total+=int(code[i]+code[i+1])
+#     print(f'{new_code}{total}')
+
+# CCC '23 J2 - Chili Peppers
+# N=int(input())
+# SHU=0
+# for i in range(N):
+#     pepper=input()
+#     if pepper=='Poblano':
+#         SHU+=1500
+#     elif pepper=='Mirasol':
+
+
+# CCC '23 J3 - Special Event
+N=int(input())
+attendable={}
+for _ in range(N):
+    availability=input()
+    for i in range(len(availability)):
+        if availability[i]=='Y':
+            if i not in attendable:
+                attendable[i]=0
+            attendable[i]+=1
