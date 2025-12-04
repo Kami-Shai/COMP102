@@ -225,15 +225,12 @@
 
 
 # CCC '23 J3 - Special Event
-# N=int(input())
-# attendable={}
-# for _ in range(N):
-#     availability=input()
-#     for i in range(len(availability)):
-#         if availability[i]=='Y':
-#             if i not in attendable:
-#                 attendable[i]=0
-#             attendable[i]+=1
-
-# CCC 2023 J4 Triangalene
-C=int(input())
+N=int(input())
+attendable={}
+for _ in range(N):
+    availability=input()
+    for i in range(len(availability)):
+        if availability[i]=='Y':
+            if i not in attendable:
+                attendable[i]=0
+            attendable[i]+=1
